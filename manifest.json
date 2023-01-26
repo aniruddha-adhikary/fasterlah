@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "FasterLah!",
+  "version": "1.0",
+  "description": "Skip the go.gov.sg waiting page, save 10 seconds.",
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://go.gov.sg/*"
+      ],
+      "exclude_matches": [
+        "https://go.gov.sg/#/*"
+      ]
+    }
+  ]
+}
